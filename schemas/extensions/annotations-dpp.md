@@ -78,7 +78,7 @@ Constraints:
 
 - Type: `boolean`
 - Used at: `objects:schemas:A_SCHEMA:tableOriented`
-- Description: Property contains potentially sensitive personal data.  Sensitive personal data is a category of personal data that needs special handling. The determination which personal data is sensitive may differ for different legal areas or industries.
+- Description: Property or entity containing potentially sensitive personal data.  Sensitive personal data is a category of personal data that needs special handling. The determination which personal data is sensitive may differ for different legal areas or industries.
   
 - Examples of sensitive personal data:
   - Special categories of personal data, such as data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, data concerning health or sex life or sexual orientation.
@@ -95,4 +95,5 @@ Constraints:
 
 - Type: `array` of `string`
 - Used at: `objects:schemas:A_SCHEMA:tableOriented`
-- Description: The annotation value is an array of strings, enabling the assignment of multiple data categories to one entity. The strings must adhere to the format of an ORD ID corresponding to the concept name "dataCategory" introduced herein (refer to ORD Specification | Open Resource Discovery).
+- Description: The annotation value is an array of strings, enabling the assignment of multiple data categories to one entity or field. The strings must adhere to the format of an Correlation ID corresponding to the concept name "dataCategory" in conjunction with an localIdentifier introduced herein (refer to ORD Specification | Open Resource Discovery).
+- Examples: `sap.s4com:dataCategory:SalesOrder`
